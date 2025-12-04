@@ -1,5 +1,9 @@
-Instructions:
+# Instructions:
 
+## Current Working Scene
+Assets > Scenes > FINAL-SCENES > Rooms
+
+### If Visuals dont work
 Go to the Edit Tab > Project Settings > Graphics
 Under Set Default Render Pipeline Choose: Performance URP Config (Universal Render Pipeline Asset)
 You will need to have installed under package manager Universal Render Pipeline
