@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Unity\\ER-Final-Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2D0EC2ED-58B9-ABB9-62B7-8D2AD6AFB498}|Unity.XR.Hands.Samples.Gestures.csproj|c:\\users\\user\\unity\\er-final-project\\assets\\samples\\xr hands\\1.6.3\\gestures\\examples\\scripts\\statichandgesture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Unity\\ER-Final-Project\\Library\\PackageCache\\com.meta.xr.sdk.interaction.ovr@2b29786f9906\\Runtime\\Sample\\Scripts\\MultiModal\\EnableOVRConcurrentHandsAndControllers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.meta.xr.sdk.interaction.ovr@2b29786f9906\\Runtime\\Sample\\Scripts\\MultiModal\\EnableOVRConcurrentHandsAndControllers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Unity\\ER-Final-Project\\Library\\PackageCache\\com.meta.xr.sdk.interaction@33d664ec3528\\Runtime\\Sample\\Scripts\\Locomotion\\LocomotionSettings\\TogglerActiveState.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.meta.xr.sdk.interaction@33d664ec3528\\Runtime\\Sample\\Scripts\\Locomotion\\LocomotionSettings\\TogglerActiveState.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D0EC2ED-58B9-ABB9-62B7-8D2AD6AFB498}|Unity.XR.Hands.Samples.Gestures.csproj|C:\\Users\\User\\Unity\\ER-Final-Project\\assets\\samples\\xr hands\\1.6.3\\gestures\\examples\\scripts\\statichandgesture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2D0EC2ED-58B9-ABB9-62B7-8D2AD6AFB498}|Unity.XR.Hands.Samples.Gestures.csproj|solutionrelative:assets\\samples\\xr hands\\1.6.3\\gestures\\examples\\scripts\\statichandgesture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A08097B3-029E-F7F2-86CE-D36DA1A0CDBA}|Assembly-CSharp.csproj|C:\\Users\\User\\Unity\\ER-Final-Project\\assets\\scenes\\testscene\\teleportationactivator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A08097B3-029E-F7F2-86CE-D36DA1A0CDBA}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\testscene\\teleportationactivator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Unity\\ER-Final-Project\\Assets\\Scenes\\TestScene\\TeleportationActivator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scenes\\TestScene\\TeleportationActivator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A08097B3-029E-F7F2-86CE-D36DA1A0CDBA}|Assembly-CSharp.csproj|C:\\Users\\User\\Unity\\ER-Final-Project\\assets\\scenes\\testscene\\animatehandoninput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A08097B3-029E-F7F2-86CE-D36DA1A0CDBA}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\testscene\\animatehandoninput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Unity\\ER-Final-Project\\Assets\\Scenes\\TestScene\\AnimateHandOnInput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scenes\\TestScene\\AnimateHandOnInput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A08097B3-029E-F7F2-86CE-D36DA1A0CDBA}|Assembly-CSharp.csproj|C:\\Users\\User\\Unity\\ER-Final-Project\\assets\\scenes\\testscene\\inputtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A08097B3-029E-F7F2-86CE-D36DA1A0CDBA}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\testscene\\inputtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Unity\\ER-Final-Project\\Assets\\Scenes\\TestScene\\InputTest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scenes\\TestScene\\InputTest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,14 +39,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "StaticHandGesture.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Unity\\ER-Final-Project\\Assets\\Samples\\XR Hands\\1.6.3\\Gestures\\Examples\\Scripts\\StaticHandGesture.cs",
-              "RelativeDocumentMoniker": "Assets\\Samples\\XR Hands\\1.6.3\\Gestures\\Examples\\Scripts\\StaticHandGesture.cs",
-              "ToolTip": "C:\\Users\\User\\Unity\\ER-Final-Project\\Assets\\Samples\\XR Hands\\1.6.3\\Gestures\\Examples\\Scripts\\StaticHandGesture.cs",
-              "RelativeToolTip": "Assets\\Samples\\XR Hands\\1.6.3\\Gestures\\Examples\\Scripts\\StaticHandGesture.cs",
-              "ViewState": "AgIAAMcAAAAAAAAAAAAgwMsAAAAAAAAAAAAAAA==",
+              "Title": "EnableOVRConcurrentHandsAndControllers.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Unity\\ER-Final-Project\\Library\\PackageCache\\com.meta.xr.sdk.interaction.ovr@2b29786f9906\\Runtime\\Sample\\Scripts\\MultiModal\\EnableOVRConcurrentHandsAndControllers.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\com.meta.xr.sdk.interaction.ovr@2b29786f9906\\Runtime\\Sample\\Scripts\\MultiModal\\EnableOVRConcurrentHandsAndControllers.cs",
+              "ToolTip": "C:\\Users\\User\\Unity\\ER-Final-Project\\Library\\PackageCache\\com.meta.xr.sdk.interaction.ovr@2b29786f9906\\Runtime\\Sample\\Scripts\\MultiModal\\EnableOVRConcurrentHandsAndControllers.cs",
+              "RelativeToolTip": "Library\\PackageCache\\com.meta.xr.sdk.interaction.ovr@2b29786f9906\\Runtime\\Sample\\Scripts\\MultiModal\\EnableOVRConcurrentHandsAndControllers.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAApwC4AAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T02:53:01.639Z",
+              "WhenOpened": "2025-12-04T15:01:07.146Z",
               "EditorCaption": ""
             },
             {
@@ -48,6 +56,31 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "TogglerActiveState.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Unity\\ER-Final-Project\\Library\\PackageCache\\com.meta.xr.sdk.interaction@33d664ec3528\\Runtime\\Sample\\Scripts\\Locomotion\\LocomotionSettings\\TogglerActiveState.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\com.meta.xr.sdk.interaction@33d664ec3528\\Runtime\\Sample\\Scripts\\Locomotion\\LocomotionSettings\\TogglerActiveState.cs",
+              "ToolTip": "C:\\Users\\User\\Unity\\ER-Final-Project\\Library\\PackageCache\\com.meta.xr.sdk.interaction@33d664ec3528\\Runtime\\Sample\\Scripts\\Locomotion\\LocomotionSettings\\TogglerActiveState.cs",
+              "RelativeToolTip": "Library\\PackageCache\\com.meta.xr.sdk.interaction@33d664ec3528\\Runtime\\Sample\\Scripts\\Locomotion\\LocomotionSettings\\TogglerActiveState.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAgwCQAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T14:50:41.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StaticHandGesture.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Unity\\ER-Final-Project\\Assets\\Samples\\XR Hands\\1.6.3\\Gestures\\Examples\\Scripts\\StaticHandGesture.cs",
+              "RelativeDocumentMoniker": "Assets\\Samples\\XR Hands\\1.6.3\\Gestures\\Examples\\Scripts\\StaticHandGesture.cs",
+              "ToolTip": "C:\\Users\\User\\Unity\\ER-Final-Project\\Assets\\Samples\\XR Hands\\1.6.3\\Gestures\\Examples\\Scripts\\StaticHandGesture.cs",
+              "RelativeToolTip": "Assets\\Samples\\XR Hands\\1.6.3\\Gestures\\Examples\\Scripts\\StaticHandGesture.cs",
+              "ViewState": "AgIAAMcAAAAAAAAAAAAgwMsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T02:53:01.639Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "TeleportationActivator.cs",
               "DocumentMoniker": "C:\\Users\\User\\Unity\\ER-Final-Project\\Assets\\Scenes\\TestScene\\TeleportationActivator.cs",
               "RelativeDocumentMoniker": "Assets\\Scenes\\TestScene\\TeleportationActivator.cs",
@@ -59,7 +92,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "AnimateHandOnInput.cs",
               "DocumentMoniker": "C:\\Users\\User\\Unity\\ER-Final-Project\\Assets\\Scenes\\TestScene\\AnimateHandOnInput.cs",
               "RelativeDocumentMoniker": "Assets\\Scenes\\TestScene\\AnimateHandOnInput.cs",
@@ -71,7 +104,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "InputTest.cs",
               "DocumentMoniker": "C:\\Users\\User\\Unity\\ER-Final-Project\\Assets\\Scenes\\TestScene\\InputTest.cs",
               "RelativeDocumentMoniker": "Assets\\Scenes\\TestScene\\InputTest.cs",
