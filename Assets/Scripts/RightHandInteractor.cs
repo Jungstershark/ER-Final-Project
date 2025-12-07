@@ -90,6 +90,7 @@ public class RightHandInteractor : MonoBehaviour {
 
     public void TriggerSpellTable()
     {
+        Debug.Log("Opening Spell Table");
         spellTable.transform.position = wristTransform.position + wristTransform.forward * 0.5f;
         spellTable.transform.rotation = Quaternion.LookRotation(-wristTransform.up, wristTransform.forward);
     }
