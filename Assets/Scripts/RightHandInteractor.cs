@@ -15,6 +15,9 @@ using UnityEngine.UIElements;
 public class RightHandInteractor : MonoBehaviour {
 
 
+    [Header("DebugInfo")]
+    public bool spellTableLock = false;
+    [Space(10)]
     public Transform wristTransform;
     [HideInInspector]
     public Ray ray;
@@ -69,8 +72,7 @@ public class RightHandInteractor : MonoBehaviour {
     public UnityEvent SelectOrb21;
     public UnityEvent SelectOrb22;
 
-    private bool spellTableLock = false;
-
+    
     // public GameObject debugSphere;
     public float rayLength = 2.0f;
 
@@ -124,12 +126,12 @@ public class RightHandInteractor : MonoBehaviour {
         
     }
 
-    public void LockSpellTable()
-    {
-        Debug.Log("Locking Spell Table");
-        // Keep current position and rotation
-        spellTableLock = true;
-    }
+    // public void LockSpellTable()
+    // {
+    //     Debug.Log("Locking Spell Table");
+    //     // Keep current position and rotation
+    //     spellTableLock = true;
+    // }
 
     public void CloseSpellTable()
     {
@@ -362,19 +364,19 @@ public class RightHandInteractor : MonoBehaviour {
             }
         }
 
-        if (this.gridSystem.activated)
-        {
-            if (Keyboard.current.aKey.wasPressedThisFrame)
-            {
-                this.gridSystem.drawLine((0,1),(1,0));
-                this.gridSystem.drawLine((1,0),(1,1));
-                this.gridSystem.drawLine((1,1),(1,2));
-                this.gridSystem.drawLine((1,2),(2,1));
-                var spell = this.gridSystem.checkSpell();
-                Debug.Log(spell);
-                Debug.Log(this.gridSystem.currentCombination());
-            }
-        }
+        // if (this.gridSystem.activated)
+        // {
+        //     if (Keyboard.current.aKey.wasPressedThisFrame)
+        //     {
+        //         this.gridSystem.drawLine((0,1),(1,0));
+        //         this.gridSystem.drawLine((1,0),(1,1));
+        //         this.gridSystem.drawLine((1,1),(1,2));
+        //         this.gridSystem.drawLine((1,2),(2,1));
+        //         var spell = this.gridSystem.checkSpell();
+        //         Debug.Log(spell);
+        //         Debug.Log(this.gridSystem.currentCombination());
+        //     }
+        // }
 
         /*
         if (SpellTableTriggered)
