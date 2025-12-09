@@ -49,6 +49,28 @@ public class RightHandInteractor : MonoBehaviour {
     public UnityEvent CloseSpellTableEvent;
     public GridSystem gridSystem;
 
+    public GameObject orb00;
+    public GameObject orb01;
+    public GameObject orb02;
+    public GameObject orb10;
+    public GameObject orb11;
+    public GameObject orb12;
+    public GameObject orb20;
+    public GameObject orb21;
+    public GameObject orb22;
+
+    public UnityEvent SelectOrb00;
+    public UnityEvent SelectOrb01;
+    public UnityEvent SelectOrb02;
+    public UnityEvent SelectOrb10;
+    public UnityEvent SelectOrb11;
+    public UnityEvent SelectOrb12;
+    public UnityEvent SelectOrb20;
+    public UnityEvent SelectOrb21;
+    public UnityEvent SelectOrb22;
+
+    private bool spellTableLock = false;
+
     // public GameObject debugSphere;
     public float rayLength = 2.0f;
 
@@ -91,14 +113,29 @@ public class RightHandInteractor : MonoBehaviour {
     public void TriggerSpellTable()
     {
         Debug.Log("Opening Spell Table");
+        if (spellTableLock)
+        {
+            Debug.Log("Spell Table is locked, not updating position.");
+            return;
+        }
         spellTable.transform.position = wristTransform.position + wristTransform.forward * 0.5f;
-        spellTable.transform.rotation = Quaternion.LookRotation(-wristTransform.up, wristTransform.forward);
+        // Ensure upright rotation: forward is wristTransform.forward, up is Vector3.up
+        spellTable.transform.rotation = Quaternion.LookRotation(wristTransform.forward, Vector3.up);
+        
+    }
+
+    public void LockSpellTable()
+    {
+        Debug.Log("Locking Spell Table");
+        // Keep current position and rotation
+        spellTableLock = true;
     }
 
     public void CloseSpellTable()
     {
         spellTable.transform.position = new Vector3(0, 0, 0);
         spellTable.transform.rotation = Quaternion.identity;
+        spellTableLock = false;
         resetOrbs.Invoke();
 
     }
@@ -119,7 +156,7 @@ public class RightHandInteractor : MonoBehaviour {
         Vector3 rayDestination = ray.origin + ray.direction * rayLength;
         rayCylinder.transform.position = ray.origin + ray.direction * rayLength / 2;
         rayCylinder.transform.LookAt(rayDestination);
-        rayCylinder.transform.localScale = new Vector3(0.05f, 0.05f, rayLength);
+        rayCylinder.transform.localScale = new Vector3(0.002f, 0.002f, rayLength);
         // debugSphere.transform.position = ray.origin + ray.direction * rayLength;
         return;
 
@@ -158,6 +195,69 @@ public class RightHandInteractor : MonoBehaviour {
             return true;
         }
         return false;
+    }
+
+    public void spellTableCheckHit(Ray ray, float rayLength)
+    {
+        RaycastHit[] hits = Physics.RaycastAll(ray, rayLength);
+        GameObject bestObj = null;
+        Vector3 bestPoint = Vector3.zero;
+        float closest = Mathf.Infinity;
+
+        foreach (var h in hits)
+        {
+            GameObject go = h.collider.gameObject;
+            if (!go.CompareTag("SpellTableOrb"))
+            {
+                if (go == orb00)
+                {
+                    SelectOrb00.Invoke();
+                    break;
+                }
+                else if (go == orb01)
+                {
+                    SelectOrb01.Invoke();
+                    break;
+                }
+                else if (go == orb02)
+                {
+                    SelectOrb02.Invoke();
+                    break;
+                }
+                else if (go == orb10)
+                {
+                    SelectOrb10.Invoke();
+                    break;
+                }
+                else if (go == orb11)
+                {
+                    SelectOrb11.Invoke();
+                    break;
+                }
+                else if (go == orb12)
+                {
+                    SelectOrb12.Invoke();
+                    break;
+                }
+                else if (go == orb20)
+                {
+                    SelectOrb20.Invoke();
+                    break;
+                }
+                else if (go == orb21)
+                {
+                    SelectOrb21.Invoke();
+                    break;
+                }
+                else if (go == orb22)
+                {
+                    SelectOrb22.Invoke();
+                    break;
+                }
+            }
+        }
+
+
     }
 
     //  Task 4. Trigger object selection by closing your right hand
@@ -303,6 +403,8 @@ public class RightHandInteractor : MonoBehaviour {
             visualHand.transform.rotation = wristTransform.rotation;
             ray = ConstructRay(wristTransform);
             RenderRay(ray, rayLength);
+            spellTableCheckHit(ray, rayLength);
+
 
             if (CheckHit(ray, rayLength)) {
                 // When the ray hits an object, reset the hit object cache timer and update the last hit object.
