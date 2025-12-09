@@ -207,7 +207,7 @@ public class RightHandInteractor : MonoBehaviour {
         foreach (var h in hits)
         {
             GameObject go = h.collider.gameObject;
-            if (!go.CompareTag("SpellTableOrb"))
+            if (go.CompareTag("SpellTableOrb"))
             {
                 if (go == orb00)
                 {

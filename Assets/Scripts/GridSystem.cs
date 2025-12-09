@@ -8,7 +8,7 @@ using UnityEngine.UIElements;
 Ini
 */
 
-public class GridSystem
+public class GridSystem : MonoBehaviour 
 {
     public Dictionary<List<(int, int)>, string> spellBook;
     public bool activated;
