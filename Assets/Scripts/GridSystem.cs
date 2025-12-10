@@ -13,6 +13,7 @@ public class GridSystem : MonoBehaviour
 {
     public static GridSystem Instance;
     public Dictionary<List<(int, int)>, UnityEvent> spellBook;
+    public List<(int, int)> currentCombi;
     public bool activated;
     public List<List<(int, int)>> grid;
     public List<List<GameObject>> objectGrid;
@@ -46,6 +47,7 @@ public class GridSystem : MonoBehaviour
         this.activated = false;
         this.startPoint = (-1, -1);
         this.grid = new List<List<(int, int)>>();
+        this.currentCombi = new List<(int, int)>();
         this.objectGrid = ObjectGridCreate();
         this.totalRows = 3;
         this.totalCols = 3;
@@ -89,6 +91,8 @@ public class GridSystem : MonoBehaviour
 
     public void RegisterOrbClick(int row, int col)
     {
+        Debug.Log("Registered Click on " + row.ToString() +  ' ' + col.ToString());
+        this.currentCombi.Add((row, col));
         if (this.startPoint.Item1 == -1 && this.startPoint.Item2 == -1)
         {
             this.startPoint = (row, col);
@@ -186,13 +190,16 @@ public class GridSystem : MonoBehaviour
     public void checkSpell()
     {
         // check if current combination matches any spells in spellBook. 
-        // If yes, return spell name. Else, return null
-        List<(int, int)> current = this.currentCombination();
+        // if yes, invoke UnityEvent of spell
+
+        //List<(int, int)> current = this.currentCombination();
+        List<(int, int)> current = this.currentCombi;
         foreach (KeyValuePair<List<(int, int)>, UnityEvent> spell in this.spellBook)
         {
             if (spell.Key.SequenceEqual(current))
             {
                 this.spellBook[spell.Key].Invoke();
+                Debug.Log("Casting something...");
             }
         }
     }
