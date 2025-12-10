@@ -66,7 +66,9 @@ public class GridSystem : MonoBehaviour
                 prev = curr;
                 curr = this.grid[curr.Item1][curr.Item2];
             }
-            this.drawLine(prev, (row, col));
+            if (prev.Item1 != row && prev.Item2 != col) {
+                this.drawLine(prev, (row, col));
+            }
         }
     }
 
