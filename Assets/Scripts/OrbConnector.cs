@@ -3,9 +3,9 @@ using UnityEngine;
 public class OrbConnector : MonoBehaviour
 {
     LineRenderer lineRenderer;
-    public void Init(GameObject orbStart)
+    public void Start()
     {
-        this.lineRenderer = orbStart.AddComponent<LineRenderer>();
+        //this.lineRenderer = orbStart.AddComponent<LineRenderer>();
         // Set the material
         lineRenderer.material = new Material(Shader.Find("Sprites/Default"));
 
@@ -18,16 +18,20 @@ public class OrbConnector : MonoBehaviour
         lineRenderer.endWidth = 0.2f;
 
         // Set the number of vertices
-        lineRenderer.positionCount = 1;
-
-        // Set the positions of the vertices
-        lineRenderer.SetPosition(0, orbStart.transform.position);
+        lineRenderer.positionCount = 0;
     }
 
     public void NewNode(GameObject orbObject)
     {
         lineRenderer.positionCount += 1;
-        lineRenderer.SetPosition(lineRenderer.positionCount-1, orbObject.transform.position);
+        if (lineRenderer.positionCount == 0)
+        {
+            this.lineRenderer = orbObject.AddComponent<LineRenderer>();
+        }
+        else
+        {
+            lineRenderer.SetPosition(lineRenderer.positionCount-1, orbObject.transform.position);
+        }
     }
     
 }
