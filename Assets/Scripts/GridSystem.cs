@@ -91,8 +91,17 @@ public class GridSystem : MonoBehaviour
 
     public void RegisterOrbClick(int row, int col)
     {
+        if (currentCombi.Count() > 30)
+        {
+            this.resetCombi();
+        }
+        int currentCombiLength = this.currentCombi.Count();
         Debug.Log("Registered Click on " + row.ToString() +  ' ' + col.ToString());
-        this.currentCombi.Add((row, col));
+        if (this.currentCombi[currentCombiLength-1].Item1 != row || this.currentCombi[currentCombiLength-1].Item2 != col) 
+        {
+            this.currentCombi.Add((row, col));            
+        }
+
         if (this.startPoint.Item1 == -1 && this.startPoint.Item2 == -1)
         {
             this.startPoint = (row, col);
@@ -113,6 +122,11 @@ public class GridSystem : MonoBehaviour
             }
         }
         this.checkSpell();
+    }
+
+    public void resetCombi()
+    {
+        this.currentCombi = new List<(int, int)>();
     }
 
     public bool isActivated()
