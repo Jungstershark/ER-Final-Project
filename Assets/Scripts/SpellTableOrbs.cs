@@ -5,14 +5,25 @@ public class SpellTableOrbs : MonoBehaviour
 {
     public GameObject orbObject;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+
+    private void SetColor(Color color, GameObject target)
+    {
+        Renderer renderer = target.GetComponent<Renderer>();
+        if (renderer != null)
+        {
+            renderer.material.color = color;
+        }
+    }
     public void OrbSelected()
     {
-        orbObject.GetComponent<Renderer>().material.color = Color.red;
+        SetColor(Color.red, orbObject);
+
+
     }
 
     public void OrbDeselected()
     {
-        orbObject.GetComponent<Renderer>().material.color = Color.white;
+        SetColor(Color.white, orbObject);
     }
 
     void Start()
