@@ -112,6 +112,7 @@ public class GridSystem : MonoBehaviour
                 this.drawLine(prev, (row, col));
             }
         }
+        this.checkSpell();
     }
 
     public bool isActivated()
