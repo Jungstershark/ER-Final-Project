@@ -120,6 +120,7 @@ public class RightHandInteractor : MonoBehaviour {
             Debug.Log("Spell Table is locked, not updating position.");
             return;
         }
+        resetOrbs.Invoke();
         spellTable.transform.position = wristTransform.position + wristTransform.forward * 0.5f;
         Debug.Log("Spell Table Position: " + spellTable.transform.position.ToString());
         spellTable.transform.rotation = Quaternion.LookRotation(Vector3.up ,wristTransform.forward);
@@ -211,9 +212,7 @@ public class RightHandInteractor : MonoBehaviour {
     public void spellTableCheckHit(Ray ray, float rayLength)
     {
         RaycastHit[] hits = Physics.RaycastAll(ray, rayLength);
-        GameObject bestObj = null;
-        Vector3 bestPoint = Vector3.zero;
-        float closest = Mathf.Infinity;
+
 
         foreach (var h in hits)
         {
@@ -373,13 +372,13 @@ public class RightHandInteractor : MonoBehaviour {
             {
                 CloseSpellTableEvent.Invoke();
                 isGridSet = false;
-                this.gridSystem.activated = false;
+                // this.gridSystem.activated = false;
             }
             else
             {
                 OpenSpellTableEvent.Invoke();
                 isGridSet = true;
-                this.gridSystem.activated = true;
+                // this.gridSystem.activated = true;
             }
         }
 
@@ -411,14 +410,14 @@ public class RightHandInteractor : MonoBehaviour {
         // Debug.Log("Ray Origin: " + ray.origin.ToString() + " Ray Direction: " + ray.direction.ToString());
         if (enableSpellTracing)
         {
-            Debug.Log("Spell Tracing...");
+            // Debug.Log("Spell Tracing...");
             RenderRay(ray, rayLength, Color.red);
             spellTableCheckHit(ray, rayLength);
         }
         else
         {
             RenderRay(ray, rayLength, Color.blue);
-            Debug.Log("Normal Tracing");
+            // Debug.Log("Normal Tracing");
         }
 
 

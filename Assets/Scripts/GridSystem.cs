@@ -13,6 +13,7 @@ public class GridSystem : MonoBehaviour
 {
     public static GridSystem Instance;
     public Dictionary<List<(int, int)>, UnityEvent> spellBook;
+    public List<(int, int)> currentCombi;
     public bool activated;
     public List<List<(int, int)>> grid;
     public List<List<GameObject>> objectGrid;
@@ -23,6 +24,8 @@ public class GridSystem : MonoBehaviour
     public UnityEvent Shatter;
     public UnityEvent Magnet;
     public UnityEvent Restart;
+    public UnityEvent resetOrbs;
+    public UnityEvent SpellisCast;
     public GameObject orb00;
     public GameObject orb01;
     public GameObject orb02;
@@ -46,6 +49,7 @@ public class GridSystem : MonoBehaviour
         this.activated = false;
         this.startPoint = (-1, -1);
         this.grid = new List<List<(int, int)>>();
+        this.currentCombi = new List<(int, int)>();
         this.objectGrid = ObjectGridCreate();
         this.totalRows = 3;
         this.totalCols = 3;
@@ -89,6 +93,32 @@ public class GridSystem : MonoBehaviour
 
     public void RegisterOrbClick(int row, int col)
     {
+        Debug.Log("RegisterOrbClick called");
+        if (currentCombi.Count() > 30)
+        {
+            this.resetCombi();
+            // Debug.Log("CurrentCombi reset due to length > 30");
+        }
+        int currentCombiLength = this.currentCombi.Count();
+        Debug.Log("CurrentCombiLength: " + currentCombiLength.ToString());
+        Debug.Log("Registered Click on " + row.ToString() +  ' ' + col.ToString());
+        if (this.currentCombi.Count > 0) {
+            if (!(this.currentCombi[currentCombiLength-1].Item1 == row && this.currentCombi[currentCombiLength-1].Item2 == col)) 
+            {
+                Debug.Log("ABCD");
+                this.currentCombi.Add((row, col));
+                Debug.Log("Added to currentCombi");
+                PrintCurrentCombi();
+
+
+            }
+        }
+        else
+        {
+           this.currentCombi.Add((row, col)); 
+        }
+        Debug.Log("EFGH");
+        PrintCurrentCombi();
         if (this.startPoint.Item1 == -1 && this.startPoint.Item2 == -1)
         {
             this.startPoint = (row, col);
@@ -105,9 +135,17 @@ public class GridSystem : MonoBehaviour
             }
             if (prev.Item1 != row && prev.Item2 != col)
             {
-                this.drawLine(prev, (row, col));
+                // error here
+                
+                // this.drawLine(prev, (row, col));
             }
         }
+        this.checkSpell();
+    }
+
+    public void resetCombi()
+    {
+        this.currentCombi = new List<(int, int)>();
     }
 
     public bool isActivated()
@@ -186,15 +224,23 @@ public class GridSystem : MonoBehaviour
     public void checkSpell()
     {
         // check if current combination matches any spells in spellBook. 
-        // If yes, return spell name. Else, return null
-        List<(int, int)> current = this.currentCombination();
+        // if yes, invoke UnityEvent of spell
+
+        //List<(int, int)> current = this.currentCombination();
+        List<(int, int)> current = this.currentCombi;
         foreach (KeyValuePair<List<(int, int)>, UnityEvent> spell in this.spellBook)
         {
             if (spell.Key.SequenceEqual(current))
             {
                 this.spellBook[spell.Key].Invoke();
+                Debug.Log("Casting something...");
+                SpellisCast.Invoke();
             }
         }
     }
-    
+    public void PrintCurrentCombi()
+    {
+        string combiStr = string.Join(", ", this.currentCombi.Select(pt => $"({pt.Item1}, {pt.Item2})"));
+        Debug.Log($"CurrentCombi: [{combiStr}]");
+    }
 }
