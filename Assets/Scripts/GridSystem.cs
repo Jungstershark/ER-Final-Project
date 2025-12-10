@@ -9,7 +9,8 @@ Ini
 */
 
 public class GridSystem : MonoBehaviour 
-{
+{ 
+    public static GridSystem Instance;
     public Dictionary<List<(int, int)>, string> spellBook;
     public bool activated;
     public List<List<(int, int)>> grid;
@@ -45,9 +46,30 @@ public class GridSystem : MonoBehaviour
         }
     }
 
-    public void Test()
+        public void Test()
     {
         Debug.Log("Grid System working");
+    }
+
+    public void RegisterOrbClick(int row, int col)
+    {
+        if (this.startPoint.Item1 == -1 && this.startPoint.Item2 == -1)
+        {
+            this.startPoint = (row, col);
+        }
+        else
+        {
+            var prev = (-1, -1);
+            var curr = this.startPoint;
+            while (curr != (-1, -1))
+            {
+                prev = curr;
+                curr = this.grid[curr.Item1][curr.Item2];
+            }
+            if (prev.Item1 != row && prev.Item2 != col) {
+                this.drawLine(prev, (row, col));
+            }
+        }
     }
 
     public bool isActivated()
