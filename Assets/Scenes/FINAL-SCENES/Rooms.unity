@@ -10456,6 +10456,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 169874, guid: faff629fb8eb81f4ea40f416bcf9bc10, type: 3}
+      propertyPath: m_TagString
+      value: Door
+      objectReference: {fileID: 0}
     - target: {fileID: 494556, guid: faff629fb8eb81f4ea40f416bcf9bc10, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.29
@@ -20527,6 +20531,7 @@ MonoBehaviour:
   orbObject: {fileID: 293292594}
   row: 2
   col: 0
+  gridSystem: {fileID: 0}
 --- !u!135 &293292599
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -25794,6 +25799,7 @@ MonoBehaviour:
   orbObject: {fileID: 362000323}
   row: 2
   col: 2
+  gridSystem: {fileID: 0}
 --- !u!135 &362000327
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -27376,6 +27382,7 @@ MonoBehaviour:
   orbObject: {fileID: 391790113}
   row: 2
   col: 1
+  gridSystem: {fileID: 0}
 --- !u!135 &391790118
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -29228,6 +29235,7 @@ MonoBehaviour:
   orbObject: {fileID: 421401193}
   row: 1
   col: 2
+  gridSystem: {fileID: 0}
 --- !u!135 &421401198
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -29816,6 +29824,10 @@ PrefabInstance:
     - target: {fileID: 169874, guid: faff629fb8eb81f4ea40f416bcf9bc10, type: 3}
       propertyPath: m_Layer
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 169874, guid: faff629fb8eb81f4ea40f416bcf9bc10, type: 3}
+      propertyPath: m_TagString
+      value: Door
       objectReference: {fileID: 0}
     - target: {fileID: 494556, guid: faff629fb8eb81f4ea40f416bcf9bc10, type: 3}
       propertyPath: m_LocalScale.x
@@ -58364,6 +58376,7 @@ MonoBehaviour:
   orbObject: {fileID: 861887478}
   row: 0
   col: 2
+  gridSystem: {fileID: 0}
 --- !u!135 &861887483
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -70263,6 +70276,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 169874, guid: faff629fb8eb81f4ea40f416bcf9bc10, type: 3}
+      propertyPath: m_TagString
+      value: Door
+      objectReference: {fileID: 0}
     - target: {fileID: 494556, guid: faff629fb8eb81f4ea40f416bcf9bc10, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.29
@@ -71390,6 +71407,7 @@ MonoBehaviour:
   orbObject: {fileID: 1045642964}
   row: 1
   col: 1
+  gridSystem: {fileID: 0}
 --- !u!135 &1045642969
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -92079,6 +92097,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 169874, guid: faff629fb8eb81f4ea40f416bcf9bc10, type: 3}
+      propertyPath: m_TagString
+      value: Door
+      objectReference: {fileID: 0}
     - target: {fileID: 494556, guid: faff629fb8eb81f4ea40f416bcf9bc10, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.29
@@ -104597,6 +104619,7 @@ MonoBehaviour:
   orbObject: {fileID: 1522240174}
   row: 0
   col: 1
+  gridSystem: {fileID: 0}
 --- !u!135 &1522240179
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -137096,6 +137119,7 @@ MonoBehaviour:
   orbObject: {fileID: 2025763849}
   row: 1
   col: 0
+  gridSystem: {fileID: 0}
 --- !u!135 &2025763854
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -143412,6 +143436,7 @@ MonoBehaviour:
   orbObject: {fileID: 2100935347}
   row: 0
   col: 0
+  gridSystem: {fileID: 0}
 --- !u!135 &2100935352
 SphereCollider:
   m_ObjectHideFlags: 0
