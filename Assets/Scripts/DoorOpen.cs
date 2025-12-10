@@ -15,7 +15,7 @@ public class DoorOpen : MonoBehaviour
         
     }
 
-    public void open()
+    public void OpenDoor()
     {
         this.doorObj.transform.position += new Vector3(1.5f, 0, 0);
     }
