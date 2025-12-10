@@ -2,15 +2,28 @@ using UnityEngine;
 
 public class FireballCollision : MonoBehaviour
 {
+    [Tooltip("Optional: Should the fireball destroy itself after hitting something?")]
+    public bool destroyOnImpact = true;
+
+    [Tooltip("Optional: Tag to ignore (e.g., Player, other fireballs). Leave empty if unused.")]
+    public string ignoreTag = "";
+
     private void OnCollisionEnter(Collision collision)
     {
-        Breakable breakable = collision.collider.GetComponentInParent<Breakable>();
-        if (breakable)
+        // Optional ignore logic
+        if (!string.IsNullOrEmpty(ignoreTag) && collision.collider.CompareTag(ignoreTag))
+            return;
+
+        // Try to find Breakable on collider or its parents
+        if (collision.collider.TryGetComponent(out Breakable breakable) ||
+            collision.collider.GetComponentInParent<Breakable>() is Breakable parentBreakable)
         {
-            breakable.Break();
+            // Prefer direct hit, fallback to parent
+            (breakable != null ? breakable : parentBreakable).Break();
         }
 
-        // Optional: destroy the fireball on impact
-        Destroy(gameObject);
+        // Optional: destroy the fireball
+        if (destroyOnImpact)
+            Destroy(gameObject);
     }
 }
