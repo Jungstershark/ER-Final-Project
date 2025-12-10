@@ -9,7 +9,7 @@ using UnityEngine.Events;
 Ini
 */
 
-public class GridSystem : MonoBehaviour 
+public class GridSystem 
 { 
     public static GridSystem Instance;
     public Dictionary<List<(int, int)>, UnityEvent> spellBook;

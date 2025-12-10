@@ -6,9 +6,10 @@ using UnityEngine.Events;
 public class SpellTableOrbs : MonoBehaviour
 {
     public GameObject orbObject;
+    public RightHandInteractor rightHandInteractor;
     public int row;
     public int col;
-
+    private GridSystem gridSystem;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
@@ -23,8 +24,8 @@ public class SpellTableOrbs : MonoBehaviour
     public void OrbSelected()
     {
         Debug.Log(orbObject.name+" selected.");
-        //orbObject.GetComponent<Renderer>().material.color = Color.red;
-        GridSystem.Instance.RegisterOrbClick(this.row, this.col);
+        
+        gridSystem.RegisterOrbClick(this.row, this.col);
         SetColor(Color.red, orbObject);
 
 
@@ -33,13 +34,12 @@ public class SpellTableOrbs : MonoBehaviour
     public void OrbDeselected()
     {
         Debug.Log(orbObject.name+" deselected.");
-        //orbObject.GetComponent<Renderer>().material.color = Color.white;
         SetColor(Color.white, orbObject);
     }
 
     void Start()
     {
-        
+        gridSystem = rightHandInteractor.gridSystem;
     }
 
     // Update is called once per frame
