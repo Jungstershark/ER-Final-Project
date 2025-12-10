@@ -7,6 +7,8 @@ TagManager:
   - SpellTableOrb
   - Anchor
   - Interactable
+  - Shatterable
+  - Magnetic
   layers:
   - Default
   - TransparentFX
