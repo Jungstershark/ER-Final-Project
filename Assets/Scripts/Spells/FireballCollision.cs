@@ -19,7 +19,7 @@ public class FireballCollision : MonoBehaviour
             collision.collider.GetComponentInParent<Breakable>() is Breakable parentBreakable)
         {
             // Prefer direct hit, fallback to parent
-            (breakable != null ? breakable : parentBreakable).Break();
+            // (breakable != null ? breakable : parentBreakable).Break();
         }
 
         // Optional: destroy the fireball
