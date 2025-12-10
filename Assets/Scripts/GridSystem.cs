@@ -9,8 +9,8 @@ using UnityEngine.Events;
 Ini
 */
 
-public class GridSystem 
-{ 
+public class GridSystem : MonoBehaviour
+{
     public static GridSystem Instance;
     public Dictionary<List<(int, int)>, UnityEvent> spellBook;
     public bool activated;
@@ -23,7 +23,7 @@ public class GridSystem
     public UnityEvent Shatter;
     public UnityEvent Magnet;
     public UnityEvent Restart;
-     public GameObject orb00;
+    public GameObject orb00;
     public GameObject orb01;
     public GameObject orb02;
     public GameObject orb10;
@@ -61,7 +61,7 @@ public class GridSystem
         }
     }
 
-        public void Test()
+    public void Test()
     {
         Debug.Log("Grid System working");
     }
@@ -103,7 +103,8 @@ public class GridSystem
                 prev = curr;
                 curr = this.grid[curr.Item1][curr.Item2];
             }
-            if (prev.Item1 != row && prev.Item2 != col) {
+            if (prev.Item1 != row && prev.Item2 != col)
+            {
                 this.drawLine(prev, (row, col));
             }
         }
@@ -141,8 +142,10 @@ public class GridSystem
     {
         // add a line to the combination
 
-        if (this.validatePointBounds(to.Item1, to.Item2) && this.validatePointBounds(from.Item1, from.Item2)) {
-            if (!from.Equals(to)) {
+        if (this.validatePointBounds(to.Item1, to.Item2) && this.validatePointBounds(from.Item1, from.Item2))
+        {
+            if (!from.Equals(to))
+            {
                 this.grid[from.Item1][from.Item2] = to;
                 if (this.startPoint == (-1, -1))
                 {

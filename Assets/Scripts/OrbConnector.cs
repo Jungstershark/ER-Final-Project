@@ -30,8 +30,8 @@ public class OrbConnector : MonoBehaviour
         }
         else
         {
-            lineRenderer.SetPosition(lineRenderer.positionCount-1, orbObject.transform.position);
+            lineRenderer.SetPosition(lineRenderer.positionCount - 1, orbObject.transform.position);
         }
     }
-    
+
 }
