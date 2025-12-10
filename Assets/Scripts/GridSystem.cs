@@ -98,15 +98,18 @@ public class GridSystem : MonoBehaviour
             // Debug.Log("CurrentCombi reset due to length > 30");
         }
         int currentCombiLength = this.currentCombi.Count();
+        Debug.Log("CurrentCombiLength: " + currentCombiLength.ToString());
         Debug.Log("Registered Click on " + row.ToString() +  ' ' + col.ToString());
         if (!(this.currentCombi[currentCombiLength-1].Item1 == row && this.currentCombi[currentCombiLength-1].Item2 == col)) 
         {
+            Debug.Log("ABCD");
             this.currentCombi.Add((row, col));
             Debug.Log("Added to currentCombi");
             PrintCurrentCombi();
 
 
         }
+        Debug.Log("EFGH");
         PrintCurrentCombi();
         if (this.startPoint.Item1 == -1 && this.startPoint.Item2 == -1)
         {
