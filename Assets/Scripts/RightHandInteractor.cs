@@ -357,7 +357,7 @@ public class RightHandInteractor : MonoBehaviour {
         var row3 = orb_array[6..9];
         objectGrid.Add(row3.ToList());
 
-        gridSystem.Test();
+        // gridSystem.Test();
     }
 
     void Update() {

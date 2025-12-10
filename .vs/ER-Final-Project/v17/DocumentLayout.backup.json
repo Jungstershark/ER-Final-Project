@@ -1,33 +1,37 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Salgoud\\Documents\\GitHub\\ER-Final-Project\\",
+  "WorkspaceRootPath": "C:\\Users\\User\\Unity\\ER-Final-Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A08097B3-029E-F7F2-86CE-D36DA1A0CDBA}|Assembly-CSharp.csproj|c:\\users\\salgoud\\documents\\github\\er-final-project\\assets\\scripts\\gridsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Unity\\ER-Final-Project\\Library\\PackageCache\\com.meta.xr.sdk.core@d6da9ab40659\\Scripts\\OVRManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.meta.xr.sdk.core@d6da9ab40659\\Scripts\\OVRManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A08097B3-029E-F7F2-86CE-D36DA1A0CDBA}|Assembly-CSharp.csproj|c:\\users\\user\\unity\\er-final-project\\assets\\scripts\\gridsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A08097B3-029E-F7F2-86CE-D36DA1A0CDBA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gridsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A08097B3-029E-F7F2-86CE-D36DA1A0CDBA}|Assembly-CSharp.csproj|c:\\users\\salgoud\\documents\\github\\er-final-project\\assets\\scripts\\orbconnector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A08097B3-029E-F7F2-86CE-D36DA1A0CDBA}|Assembly-CSharp.csproj|C:\\Users\\User\\Unity\\ER-Final-Project\\assets\\scripts\\orbconnector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A08097B3-029E-F7F2-86CE-D36DA1A0CDBA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\orbconnector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A08097B3-029E-F7F2-86CE-D36DA1A0CDBA}|Assembly-CSharp.csproj|c:\\users\\salgoud\\documents\\github\\er-final-project\\assets\\scripts\\gridorb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A08097B3-029E-F7F2-86CE-D36DA1A0CDBA}|Assembly-CSharp.csproj|C:\\Users\\User\\Unity\\ER-Final-Project\\assets\\scripts\\gridorb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A08097B3-029E-F7F2-86CE-D36DA1A0CDBA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gridorb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A08097B3-029E-F7F2-86CE-D36DA1A0CDBA}|Assembly-CSharp.csproj|C:\\Users\\Salgoud\\Documents\\GitHub\\ER-Final-Project\\assets\\scripts\\righthandinteractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A08097B3-029E-F7F2-86CE-D36DA1A0CDBA}|Assembly-CSharp.csproj|C:\\Users\\User\\Unity\\ER-Final-Project\\assets\\scripts\\righthandinteractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A08097B3-029E-F7F2-86CE-D36DA1A0CDBA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\righthandinteractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A08097B3-029E-F7F2-86CE-D36DA1A0CDBA}|Assembly-CSharp.csproj|C:\\Users\\Salgoud\\Documents\\GitHub\\ER-Final-Project\\assets\\scripts\\spells\\fireballcollision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A08097B3-029E-F7F2-86CE-D36DA1A0CDBA}|Assembly-CSharp.csproj|C:\\Users\\User\\Unity\\ER-Final-Project\\assets\\scripts\\spells\\fireballcollision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A08097B3-029E-F7F2-86CE-D36DA1A0CDBA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spells\\fireballcollision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A08097B3-029E-F7F2-86CE-D36DA1A0CDBA}|Assembly-CSharp.csproj|C:\\Users\\Salgoud\\Documents\\GitHub\\ER-Final-Project\\assets\\scripts\\spelltableorbs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A08097B3-029E-F7F2-86CE-D36DA1A0CDBA}|Assembly-CSharp.csproj|C:\\Users\\User\\Unity\\ER-Final-Project\\assets\\scripts\\spelltableorbs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A08097B3-029E-F7F2-86CE-D36DA1A0CDBA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spelltableorbs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Salgoud\\Documents\\GitHub\\ER-Final-Project\\Library\\PackageCache\\com.unity.xr.compositionlayers@437b07576726\\Runtime\\Services\\CompositionLayerManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Unity\\ER-Final-Project\\Library\\PackageCache\\com.unity.xr.compositionlayers@437b07576726\\Runtime\\Services\\CompositionLayerManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.xr.compositionlayers@437b07576726\\Runtime\\Services\\CompositionLayerManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -38,41 +42,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "OrbConnector.cs",
-              "DocumentMoniker": "C:\\Users\\Salgoud\\Documents\\GitHub\\ER-Final-Project\\Assets\\Scripts\\OrbConnector.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\OrbConnector.cs",
-              "ToolTip": "C:\\Users\\Salgoud\\Documents\\GitHub\\ER-Final-Project\\Assets\\Scripts\\OrbConnector.cs",
-              "RelativeToolTip": "Assets\\Scripts\\OrbConnector.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAABAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "OVRManager.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Unity\\ER-Final-Project\\Library\\PackageCache\\com.meta.xr.sdk.core@d6da9ab40659\\Scripts\\OVRManager.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\com.meta.xr.sdk.core@d6da9ab40659\\Scripts\\OVRManager.cs",
+              "ToolTip": "C:\\Users\\User\\Unity\\ER-Final-Project\\Library\\PackageCache\\com.meta.xr.sdk.core@d6da9ab40659\\Scripts\\OVRManager.cs",
+              "RelativeToolTip": "Library\\PackageCache\\com.meta.xr.sdk.core@d6da9ab40659\\Scripts\\OVRManager.cs",
+              "ViewState": "AgIAAF8IAAAAAAAAAAAgwHQIAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T13:46:36.914Z",
+              "WhenOpened": "2025-12-10T14:21:06.712Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "GridOrb.cs",
-              "DocumentMoniker": "C:\\Users\\Salgoud\\Documents\\GitHub\\ER-Final-Project\\Assets\\Scripts\\GridOrb.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\GridOrb.cs",
-              "ToolTip": "C:\\Users\\Salgoud\\Documents\\GitHub\\ER-Final-Project\\Assets\\Scripts\\GridOrb.cs",
-              "RelativeToolTip": "Assets\\Scripts\\GridOrb.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAABAAAAAAAAAA==",
+              "Title": "OrbConnector.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Unity\\ER-Final-Project\\Assets\\Scripts\\OrbConnector.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\OrbConnector.cs",
+              "ToolTip": "C:\\Users\\User\\Unity\\ER-Final-Project\\Assets\\Scripts\\OrbConnector.cs",
+              "RelativeToolTip": "Assets\\Scripts\\OrbConnector.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T13:46:27.658Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-10T13:46:36.914Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
+              "Title": "GridOrb.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Unity\\ER-Final-Project\\Assets\\Scripts\\GridOrb.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GridOrb.cs",
+              "ToolTip": "C:\\Users\\User\\Unity\\ER-Final-Project\\Assets\\Scripts\\GridOrb.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GridOrb.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T13:46:27.658Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "FireballCollision.cs",
-              "DocumentMoniker": "C:\\Users\\Salgoud\\Documents\\GitHub\\ER-Final-Project\\Assets\\Scripts\\Spells\\FireballCollision.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Unity\\ER-Final-Project\\Assets\\Scripts\\Spells\\FireballCollision.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Spells\\FireballCollision.cs",
-              "ToolTip": "C:\\Users\\Salgoud\\Documents\\GitHub\\ER-Final-Project\\Assets\\Scripts\\Spells\\FireballCollision.cs",
+              "ToolTip": "C:\\Users\\User\\Unity\\ER-Final-Project\\Assets\\Scripts\\Spells\\FireballCollision.cs",
               "RelativeToolTip": "Assets\\Scripts\\Spells\\FireballCollision.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAAwBUAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -80,11 +99,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "RightHandInteractor.cs",
-              "DocumentMoniker": "C:\\Users\\Salgoud\\Documents\\GitHub\\ER-Final-Project\\Assets\\Scripts\\RightHandInteractor.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Unity\\ER-Final-Project\\Assets\\Scripts\\RightHandInteractor.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\RightHandInteractor.cs",
-              "ToolTip": "C:\\Users\\Salgoud\\Documents\\GitHub\\ER-Final-Project\\Assets\\Scripts\\RightHandInteractor.cs",
+              "ToolTip": "C:\\Users\\User\\Unity\\ER-Final-Project\\Assets\\Scripts\\RightHandInteractor.cs",
               "RelativeToolTip": "Assets\\Scripts\\RightHandInteractor.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -92,11 +111,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "GridSystem.cs",
-              "DocumentMoniker": "C:\\Users\\Salgoud\\Documents\\GitHub\\ER-Final-Project\\Assets\\Scripts\\GridSystem.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Unity\\ER-Final-Project\\Assets\\Scripts\\GridSystem.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GridSystem.cs",
-              "ToolTip": "C:\\Users\\Salgoud\\Documents\\GitHub\\ER-Final-Project\\Assets\\Scripts\\GridSystem.cs",
+              "ToolTip": "C:\\Users\\User\\Unity\\ER-Final-Project\\Assets\\Scripts\\GridSystem.cs",
               "RelativeToolTip": "Assets\\Scripts\\GridSystem.cs",
               "ViewState": "AgIAAIsAAAAAAAAAAAAwwMYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -105,11 +124,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "SpellTableOrbs.cs",
-              "DocumentMoniker": "C:\\Users\\Salgoud\\Documents\\GitHub\\ER-Final-Project\\Assets\\Scripts\\SpellTableOrbs.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Unity\\ER-Final-Project\\Assets\\Scripts\\SpellTableOrbs.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SpellTableOrbs.cs",
-              "ToolTip": "C:\\Users\\Salgoud\\Documents\\GitHub\\ER-Final-Project\\Assets\\Scripts\\SpellTableOrbs.cs",
+              "ToolTip": "C:\\Users\\User\\Unity\\ER-Final-Project\\Assets\\Scripts\\SpellTableOrbs.cs",
               "RelativeToolTip": "Assets\\Scripts\\SpellTableOrbs.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAAwBsAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -117,11 +136,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "CompositionLayerManager.cs",
-              "DocumentMoniker": "C:\\Users\\Salgoud\\Documents\\GitHub\\ER-Final-Project\\Library\\PackageCache\\com.unity.xr.compositionlayers@437b07576726\\Runtime\\Services\\CompositionLayerManager.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Unity\\ER-Final-Project\\Library\\PackageCache\\com.unity.xr.compositionlayers@437b07576726\\Runtime\\Services\\CompositionLayerManager.cs",
               "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.xr.compositionlayers@437b07576726\\Runtime\\Services\\CompositionLayerManager.cs",
-              "ToolTip": "C:\\Users\\Salgoud\\Documents\\GitHub\\ER-Final-Project\\Library\\PackageCache\\com.unity.xr.compositionlayers@437b07576726\\Runtime\\Services\\CompositionLayerManager.cs",
+              "ToolTip": "C:\\Users\\User\\Unity\\ER-Final-Project\\Library\\PackageCache\\com.unity.xr.compositionlayers@437b07576726\\Runtime\\Services\\CompositionLayerManager.cs",
               "RelativeToolTip": "Library\\PackageCache\\com.unity.xr.compositionlayers@437b07576726\\Runtime\\Services\\CompositionLayerManager.cs",
               "ViewState": "AgIAAF0CAAAAAAAAAAAowGwCAABpAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

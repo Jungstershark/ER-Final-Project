@@ -6,10 +6,10 @@ using UnityEngine.Events;
 public class SpellTableOrbs : MonoBehaviour
 {
     public GameObject orbObject;
-    public RightHandInteractor rightHandInteractor;
+    // public RightHandInteractor rightHandInteractor;
     public int row;
     public int col;
-    private GridSystem gridSystem;
+    public GridSystem gridSystem;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
@@ -39,7 +39,7 @@ public class SpellTableOrbs : MonoBehaviour
 
     void Start()
     {
-        gridSystem = rightHandInteractor.gridSystem;
+        // gridSystem = rightHandInteractor.gridSystem;
     }
 
     // Update is called once per frame
