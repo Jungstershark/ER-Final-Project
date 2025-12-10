@@ -33,7 +33,7 @@ public class GridSystem : MonoBehaviour
     public GameObject orb21;
     public GameObject orb22;
 
-
+    
     public void Start()
     {
         this.spellBook = new Dictionary<List<(int, int)>, UnityEvent>
@@ -196,4 +196,5 @@ public class GridSystem : MonoBehaviour
             }
         }
     }
+    
 }
