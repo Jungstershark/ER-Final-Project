@@ -230,6 +230,7 @@ public class GridSystem : MonoBehaviour
             {
                 this.spellBook[spell.Key].Invoke();
                 Debug.Log("Casting something...");
+                this.resetCombi();
             }
         }
     }
