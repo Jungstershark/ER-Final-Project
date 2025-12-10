@@ -15,18 +15,25 @@ public class GridSystem
     public Dictionary<List<(int, int)>, UnityEvent> spellBook;
     public bool activated;
     public List<List<(int, int)>> grid;
-    public List<List<GridOrb>> objectGrid;
+    public List<List<GameObject>> objectGrid;
     public (int, int) startPoint;
     public int totalRows;
     public int totalCols;
     public UnityEvent Shatter;
     public UnityEvent Magnet;
     public UnityEvent Restart;
+     public GameObject orb00;
+    public GameObject orb01;
+    public GameObject orb02;
+    public GameObject orb10;
+    public GameObject orb11;
+    public GameObject orb12;
+    public GameObject orb20;
+    public GameObject orb21;
+    public GameObject orb22;
 
 
-
-
-    public GridSystem(List<List<GridOrb>> objectGridInput, int rows = 3, int cols = 3)
+    public void Start()
     {
         this.spellBook = new Dictionary<List<(int, int)>, UnityEvent>
         {
@@ -38,14 +45,14 @@ public class GridSystem
         this.activated = false;
         this.startPoint = (-1, -1);
         this.grid = new List<List<(int, int)>>();
-        this.objectGrid = objectGridInput;
-        this.totalRows = rows;
-        this.totalCols = cols;
+        this.objectGrid = ObjectGridCreate();
+        this.totalRows = 3;
+        this.totalCols = 3;
 
-        for (int i = 0; i < rows; i++)
+        for (int i = 0; i < this.totalRows; i++)
         {
             List<(int, int)> sublist = new List<(int, int)>();
-            for (int j = 0; j < cols; j++)
+            for (int j = 0; j < this.totalCols; j++)
             {
                 sublist.Add((-1, -1));
             }
@@ -56,6 +63,27 @@ public class GridSystem
         public void Test()
     {
         Debug.Log("Grid System working");
+    }
+
+    public List<List<GameObject>> ObjectGridCreate()
+    {
+        objectGrid = new List<List<GameObject>>();
+        List<GameObject> row1 = new List<GameObject>();
+        row1.Add(orb00);
+        row1.Add(orb01);
+        row1.Add(orb02);
+        objectGrid.Add(row1);
+        List<GameObject> row2 = new List<GameObject>();
+        row2.Add(orb10);
+        row2.Add(orb11);
+        row2.Add(orb12);
+        objectGrid.Add(row2);
+        List<GameObject> row3 = new List<GameObject>();
+        row3.Add(orb20);
+        row3.Add(orb21);
+        row3.Add(orb22);
+        objectGrid.Add(row3);
+        return objectGrid;
     }
 
     public void RegisterOrbClick(int row, int col)
@@ -117,9 +145,9 @@ public class GridSystem
                 if (this.startPoint == (-1, -1))
                 {
                     this.startPoint = from;
-                    this.objectGrid[from.Item1][from.Item2].OrbSelected();
+                    //this.objectGrid[from.Item1][from.Item2].OrbSelected();
                 }
-                this.objectGrid[to.Item1][to.Item2].OrbSelected();
+                //this.objectGrid[to.Item1][to.Item2].OrbSelected();
                 Debug.Log($"Line drawn from {from} to {to}");
             }
         }
