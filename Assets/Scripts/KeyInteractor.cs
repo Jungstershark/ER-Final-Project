@@ -12,7 +12,7 @@ public class KeyInteractor : MonoBehaviour
         if (other.CompareTag("Door"))
         {
             Debug.Log("Key touched a Door. Opening door...");
-            OpenDoor?.Invoke();
+            OpenDoor.Invoke();
         }
     }
 
@@ -22,7 +22,7 @@ public class KeyInteractor : MonoBehaviour
         if (collision.collider.CompareTag("Door"))
         {
             Debug.Log("Key touched a Door. Opening door...");
-            OpenDoor?.Invoke();
+            OpenDoor.Invoke();
         }
     }
 }
