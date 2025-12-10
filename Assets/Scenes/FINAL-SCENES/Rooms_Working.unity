@@ -7136,6 +7136,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 169874, guid: faff629fb8eb81f4ea40f416bcf9bc10, type: 3}
       insertIndex: -1
       addedObject: {fileID: 650556891}
+    - targetCorrespondingSourceObject: {fileID: 169874, guid: faff629fb8eb81f4ea40f416bcf9bc10, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 650556892}
   m_SourcePrefab: {fileID: 100100000, guid: faff629fb8eb81f4ea40f416bcf9bc10, type: 3}
 --- !u!1 &102501315
 GameObject:
@@ -44558,6 +44561,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorOpen
   doorObj: {fileID: 650556889}
+--- !u!114 &650556892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650556889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77529ee44281e8f47a30d09a5f580964, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SimpleGameEventListener
+  Event: {fileID: 11400000, guid: 9843bf90531ea0a48a4023f68bedd278, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 650556891}
+        m_TargetAssemblyTypeName: DoorOpen, Assembly-CSharp
+        m_MethodName: OpenDoor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &652366719
 GameObject:
   m_ObjectHideFlags: 0
@@ -76240,7 +76271,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2720035132689322368, guid: 2a54b78eced40e74db39ff12257d5702, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.689601
+      value: 0.812
       objectReference: {fileID: 0}
     - target: {fileID: 2720035132689322368, guid: 2a54b78eced40e74db39ff12257d5702, type: 3}
       propertyPath: m_LocalPosition.z
@@ -76285,6 +76316,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3383418444488100666, guid: 2a54b78eced40e74db39ff12257d5702, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1157468155}
+    - targetCorrespondingSourceObject: {fileID: 3383418444488100666, guid: 2a54b78eced40e74db39ff12257d5702, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1157468159}
   m_SourcePrefab: {fileID: 100100000, guid: 2a54b78eced40e74db39ff12257d5702, type: 3}
 --- !u!1 &1093643930
 GameObject:
@@ -79907,6 +79941,28 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!64 &1157468159
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1157468151}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7265974592398154989, guid: 07615c1ae01a77148ba9104f90cf3cf1, type: 3}
 --- !u!1001 &1158154948
 PrefabInstance:
   m_ObjectHideFlags: 0
