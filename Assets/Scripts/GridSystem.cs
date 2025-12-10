@@ -3,6 +3,7 @@ using System.Data;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UIElements;
+using UnityEngine.Events;
 
 /* 
 Ini
@@ -11,21 +12,27 @@ Ini
 public class GridSystem : MonoBehaviour 
 { 
     public static GridSystem Instance;
-    public Dictionary<List<(int, int)>, string> spellBook;
+    public Dictionary<List<(int, int)>, UnityEvent> spellBook;
     public bool activated;
     public List<List<(int, int)>> grid;
     public List<List<GridOrb>> objectGrid;
     public (int, int) startPoint;
     public int totalRows;
     public int totalCols;
+    public UnityEvent Shatter;
+    public UnityEvent Magnet;
+    public UnityEvent Restart;
+
+
+
 
     public GridSystem(List<List<GridOrb>> objectGridInput, int rows = 3, int cols = 3)
     {
-        this.spellBook = new Dictionary<List<(int, int)>, string>
+        this.spellBook = new Dictionary<List<(int, int)>, UnityEvent>
         {
-            { new List<(int, int)> { (0, 1), (1, 0), (1, 1), (1, 2), (2, 1) }, "Shatter" },
-            { new List<(int, int)> { (0, 0), (0, 1), (0, 2), (1, 1), (2, 0), (2, 1), (2, 2), (1, 1), (0, 0)}, "Restart" },
-            { new List<(int, int)> { (2, 0), (1, 0), (0, 0), (0, 1), (0, 2), (1, 2), (2, 2) }, "Magnet" }
+            { new List<(int, int)> { (0, 1), (1, 0), (1, 1), (1, 2), (2, 1) }, Shatter },
+            { new List<(int, int)> { (0, 0), (0, 1), (0, 2), (1, 1), (2, 0), (2, 1), (2, 2), (1, 1), (0, 0)}, Restart },
+            { new List<(int, int)> { (2, 0), (1, 0), (0, 0), (0, 1), (0, 2), (1, 2), (2, 2) }, Magnet }
         };
 
         this.activated = false;
@@ -142,18 +149,17 @@ public class GridSystem : MonoBehaviour
         return output;
     }
 
-    public string checkSpell()
+    public void checkSpell()
     {
         // check if current combination matches any spells in spellBook. 
         // If yes, return spell name. Else, return null
         List<(int, int)> current = this.currentCombination();
-        foreach (KeyValuePair<List<(int, int)>, string> spell in this.spellBook)
+        foreach (KeyValuePair<List<(int, int)>, UnityEvent> spell in this.spellBook)
         {
             if (spell.Key.SequenceEqual(current))
             {
-                return this.spellBook[spell.Key];
+                this.spellBook[spell.Key].Invoke();
             }
         }
-        return null;
     }
 }
