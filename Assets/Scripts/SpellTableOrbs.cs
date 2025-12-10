@@ -27,6 +27,7 @@ public class SpellTableOrbs : MonoBehaviour
         
         gridSystem.RegisterOrbClick(this.row, this.col);
         SetColor(Color.red, orbObject);
+        OrbConnector.Instance.NewNode(orbObject);
 
 
     }
