@@ -25,6 +25,7 @@ public class GridSystem : MonoBehaviour
     public UnityEvent Magnet;
     public UnityEvent Restart;
     public UnityEvent resetOrbs;
+    public UnityEvent SpellisCast;
     public GameObject orb00;
     public GameObject orb01;
     public GameObject orb02;
@@ -134,7 +135,9 @@ public class GridSystem : MonoBehaviour
             }
             if (prev.Item1 != row && prev.Item2 != col)
             {
-                this.drawLine(prev, (row, col));
+                // error here
+                
+                // this.drawLine(prev, (row, col));
             }
         }
         this.checkSpell();
@@ -231,8 +234,7 @@ public class GridSystem : MonoBehaviour
             {
                 this.spellBook[spell.Key].Invoke();
                 Debug.Log("Casting something...");
-                this.resetCombi();
-                resetOrbs.Invoke();
+                SpellisCast.Invoke();
             }
         }
     }

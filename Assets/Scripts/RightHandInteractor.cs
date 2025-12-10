@@ -120,6 +120,7 @@ public class RightHandInteractor : MonoBehaviour {
             Debug.Log("Spell Table is locked, not updating position.");
             return;
         }
+        resetOrbs.Invoke();
         spellTable.transform.position = wristTransform.position + wristTransform.forward * 0.5f;
         Debug.Log("Spell Table Position: " + spellTable.transform.position.ToString());
         spellTable.transform.rotation = Quaternion.LookRotation(Vector3.up ,wristTransform.forward);
@@ -371,13 +372,13 @@ public class RightHandInteractor : MonoBehaviour {
             {
                 CloseSpellTableEvent.Invoke();
                 isGridSet = false;
-                this.gridSystem.activated = false;
+                // this.gridSystem.activated = false;
             }
             else
             {
                 OpenSpellTableEvent.Invoke();
                 isGridSet = true;
-                this.gridSystem.activated = true;
+                // this.gridSystem.activated = true;
             }
         }
 

@@ -15962,10 +15962,6 @@ PrefabInstance:
       propertyPath: _locomotor
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 2402346120984287609, guid: 2b6a1257ec0ff284693f68d0ddccbbe8, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2615359938467783524, guid: 2b6a1257ec0ff284693f68d0ddccbbe8, type: 3}
       propertyPath: _toggle
       value: 
@@ -52526,8 +52522,6 @@ GameObject:
   m_Component:
   - component: {fileID: 769663912}
   - component: {fileID: 769663913}
-  - component: {fileID: 769663914}
-  - component: {fileID: 769663915}
   m_Layer: 0
   m_Name: GridHandler
   m_TagString: Untagged
@@ -52565,7 +52559,7 @@ MonoBehaviour:
   activated: 0
   totalRows: 0
   totalCols: 0
-  orbConnector: {fileID: 769663915}
+  orbConnector: {fileID: 0}
   Shatter:
     m_PersistentCalls:
       m_Calls:
@@ -52626,21 +52620,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  SpellisCast:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: eff2425a0308a4f4ab7baeb6a49c8963, type: 2}
-        m_TargetAssemblyTypeName: SimpleGameEvent, Assembly-CSharp
-        m_MethodName: Raise
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
   orb00: {fileID: 2100935347}
   orb01: {fileID: 1522240174}
   orb02: {fileID: 861887478}
@@ -52650,46 +52629,6 @@ MonoBehaviour:
   orb20: {fileID: 293292594}
   orb21: {fileID: 391790113}
   orb22: {fileID: 362000323}
---- !u!114 &769663914
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 769663909}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77529ee44281e8f47a30d09a5f580964, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SimpleGameEventListener
-  Event: {fileID: 11400000, guid: fb95345aa91a9514389d5e87524f7ba1, type: 2}
-  Response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 769663913}
-        m_TargetAssemblyTypeName: GridSystem, Assembly-CSharp
-        m_MethodName: resetCombi
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &769663915
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 769663909}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd6bc65a5ad20bd468a74f4780579af4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::OrbConnector
 --- !u!1 &770210492
 GameObject:
   m_ObjectHideFlags: 0
@@ -135788,7 +135727,6 @@ GameObject:
   - component: {fileID: 2007275315}
   - component: {fileID: 2007275314}
   - component: {fileID: 2007275313}
-  - component: {fileID: 2007275318}
   m_Layer: 0
   m_Name: Manipulation
   m_TagString: Untagged
@@ -136141,34 +136079,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2007275318
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2007275311}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77529ee44281e8f47a30d09a5f580964, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SimpleGameEventListener
-  Event: {fileID: 11400000, guid: eff2425a0308a4f4ab7baeb6a49c8963, type: 2}
-  Response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2007275312}
-        m_TargetAssemblyTypeName: RightHandInteractor, Assembly-CSharp
-        m_MethodName: CloseSpellTable
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &2009806153
 GameObject:
   m_ObjectHideFlags: 0

@@ -15962,10 +15962,6 @@ PrefabInstance:
       propertyPath: _locomotor
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 2402346120984287609, guid: 2b6a1257ec0ff284693f68d0ddccbbe8, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2615359938467783524, guid: 2b6a1257ec0ff284693f68d0ddccbbe8, type: 3}
       propertyPath: _toggle
       value: 
@@ -52527,7 +52523,6 @@ GameObject:
   - component: {fileID: 769663912}
   - component: {fileID: 769663913}
   - component: {fileID: 769663914}
-  - component: {fileID: 769663915}
   m_Layer: 0
   m_Name: GridHandler
   m_TagString: Untagged
@@ -52565,7 +52560,7 @@ MonoBehaviour:
   activated: 0
   totalRows: 0
   totalCols: 0
-  orbConnector: {fileID: 769663915}
+  orbConnector: {fileID: 0}
   Shatter:
     m_PersistentCalls:
       m_Calls:
@@ -52678,18 +52673,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &769663915
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 769663909}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd6bc65a5ad20bd468a74f4780579af4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::OrbConnector
 --- !u!1 &770210492
 GameObject:
   m_ObjectHideFlags: 0
