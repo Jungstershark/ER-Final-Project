@@ -5902,8 +5902,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpellTableOrbs
   orbObject: {fileID: 293292594}
-  rightHandInteractor: {fileID: 2007275312}
-  row: 2
+  rightHandInteractor: {fileID: 0}
+  row: 0
   col: 0
 --- !u!135 &293292599
 SphereCollider:
@@ -8348,9 +8348,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpellTableOrbs
   orbObject: {fileID: 362000323}
-  rightHandInteractor: {fileID: 2007275312}
-  row: 2
-  col: 2
+  rightHandInteractor: {fileID: 0}
+  row: 0
+  col: 0
 --- !u!135 &362000327
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -9092,9 +9092,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpellTableOrbs
   orbObject: {fileID: 391790113}
-  rightHandInteractor: {fileID: 2007275312}
-  row: 2
-  col: 1
+  rightHandInteractor: {fileID: 0}
+  row: 0
+  col: 0
 --- !u!135 &391790118
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -10128,9 +10128,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpellTableOrbs
   orbObject: {fileID: 421401193}
-  rightHandInteractor: {fileID: 2007275312}
-  row: 1
-  col: 2
+  rightHandInteractor: {fileID: 0}
+  row: 0
+  col: 0
 --- !u!135 &421401198
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -11055,7 +11055,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &450971128
 Transform:
   m_ObjectHideFlags: 0
@@ -15335,6 +15335,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 769663912}
+  - component: {fileID: 769663911}
   m_Layer: 0
   m_Name: GridHandler
   m_TagString: Untagged
@@ -15342,6 +15343,76 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &769663911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 769663909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef5434e4a630d3840a7b06e4ee20e7de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GridSystem
+  activated: 0
+  totalRows: 0
+  totalCols: 0
+  orbConnector: {fileID: 0}
+  Shatter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: e8506ac113998054fb1fc09cf2be9f9c, type: 2}
+        m_TargetAssemblyTypeName: SimpleGameEvent, Assembly-CSharp
+        m_MethodName: Raise
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  Magnet:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 4ce8a3bf8ca575b4fabe1d87d8391334, type: 2}
+        m_TargetAssemblyTypeName: SimpleGameEvent, Assembly-CSharp
+        m_MethodName: Raise
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  Restart:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 4108e61e7e566da45af09b062f51c320, type: 2}
+        m_TargetAssemblyTypeName: SimpleGameEvent, Assembly-CSharp
+        m_MethodName: Raise
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  orb00: {fileID: 0}
+  orb01: {fileID: 0}
+  orb02: {fileID: 0}
+  orb10: {fileID: 0}
+  orb11: {fileID: 0}
+  orb12: {fileID: 0}
+  orb20: {fileID: 0}
+  orb21: {fileID: 0}
+  orb22: {fileID: 0}
 --- !u!4 &769663912
 Transform:
   m_ObjectHideFlags: 0
@@ -17210,9 +17281,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpellTableOrbs
   orbObject: {fileID: 861887478}
-  rightHandInteractor: {fileID: 2007275312}
+  rightHandInteractor: {fileID: 0}
   row: 0
-  col: 2
+  col: 0
 --- !u!135 &861887483
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -19529,9 +19600,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpellTableOrbs
   orbObject: {fileID: 1045642964}
-  rightHandInteractor: {fileID: 2007275312}
-  row: 1
-  col: 1
+  rightHandInteractor: {fileID: 0}
+  row: 0
+  col: 0
 --- !u!135 &1045642969
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -23686,7 +23757,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1291395818
 Transform:
   m_ObjectHideFlags: 0
@@ -25498,7 +25569,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 705f5d3092e769942941f0ff441b003c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpellBehavior
-  SpellSource: {fileID: 1542810367}
+  SpellSource: {fileID: 0}
   rayLength: 10
 --- !u!4 &1349960546
 Transform:
@@ -28560,9 +28631,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpellTableOrbs
   orbObject: {fileID: 1522240174}
-  rightHandInteractor: {fileID: 2007275312}
+  rightHandInteractor: {fileID: 0}
   row: 0
-  col: 1
+  col: 0
 --- !u!135 &1522240179
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -36756,7 +36827,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1995311418
 Transform:
   m_ObjectHideFlags: 0
@@ -37190,6 +37261,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  gridSystem: {fileID: 0}
   orb00: {fileID: 2100935347}
   orb01: {fileID: 1522240174}
   orb02: {fileID: 861887478}
@@ -38082,8 +38154,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpellTableOrbs
   orbObject: {fileID: 2025763849}
-  rightHandInteractor: {fileID: 2007275312}
-  row: 1
+  rightHandInteractor: {fileID: 0}
+  row: 0
   col: 0
 --- !u!135 &2025763854
 SphereCollider:
@@ -39098,7 +39170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpellTableOrbs
   orbObject: {fileID: 2100935347}
-  rightHandInteractor: {fileID: 2007275312}
+  rightHandInteractor: {fileID: 0}
   row: 0
   col: 0
 --- !u!135 &2100935352
