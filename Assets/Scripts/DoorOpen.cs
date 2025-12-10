@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class DoorOpen : MonoBehaviour
 {
-    public GameObject door_num;
+    public GameObject doorObj;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -13,5 +13,10 @@ public class DoorOpen : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void open()
+    {
+        this.doorObj.transform.position += new Vector3(1.5f, 0, 0);
     }
 }
