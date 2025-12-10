@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Salgoud\\Documents\\GitHub\\ER-Final-Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A08097B3-029E-F7F2-86CE-D36DA1A0CDBA}|Assembly-CSharp.csproj|c:\\users\\salgoud\\documents\\github\\er-final-project\\assets\\scripts\\spells\\shatterspell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A08097B3-029E-F7F2-86CE-D36DA1A0CDBA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spells\\shatterspell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A08097B3-029E-F7F2-86CE-D36DA1A0CDBA}|Assembly-CSharp.csproj|c:\\users\\salgoud\\documents\\github\\er-final-project\\assets\\scripts\\spells\\spellbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A08097B3-029E-F7F2-86CE-D36DA1A0CDBA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spells\\spellbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A08097B3-029E-F7F2-86CE-D36DA1A0CDBA}|Assembly-CSharp.csproj|C:\\Users\\Salgoud\\Documents\\GitHub\\ER-Final-Project\\assets\\scripts\\righthandinteractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -55,14 +55,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ShatterSpell.cs",
-              "DocumentMoniker": "C:\\Users\\Salgoud\\Documents\\GitHub\\ER-Final-Project\\Assets\\Scripts\\Spells\\ShatterSpell.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Spells\\ShatterSpell.cs",
-              "ToolTip": "C:\\Users\\Salgoud\\Documents\\GitHub\\ER-Final-Project\\Assets\\Scripts\\Spells\\ShatterSpell.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Spells\\ShatterSpell.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Title": "SpellBehavior.cs",
+              "DocumentMoniker": "C:\\Users\\Salgoud\\Documents\\GitHub\\ER-Final-Project\\Assets\\Scripts\\Spells\\SpellBehavior.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Spells\\SpellBehavior.cs",
+              "ToolTip": "C:\\Users\\Salgoud\\Documents\\GitHub\\ER-Final-Project\\Assets\\Scripts\\Spells\\SpellBehavior.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Spells\\SpellBehavior.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwDUAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T09:16:55.884Z",
+              "WhenOpened": "2025-12-10T09:43:29.491Z",
               "EditorCaption": ""
             },
             {
@@ -73,7 +73,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\RightHandInteractor.cs",
               "ToolTip": "C:\\Users\\Salgoud\\Documents\\GitHub\\ER-Final-Project\\Assets\\Scripts\\RightHandInteractor.cs",
               "RelativeToolTip": "Assets\\Scripts\\RightHandInteractor.cs",
-              "ViewState": "AgIAAM0AAAAAAAAAAAAcwNUAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAALgAAAAAAAAAAAAcwMYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-07T04:15:49.266Z",
               "EditorCaption": ""
@@ -88,8 +88,7 @@
               "RelativeToolTip": "Assets\\Scripts\\GridSystem.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAGEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T08:06:11.445Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-09T08:06:11.445Z"
             },
             {
               "$type": "Document",

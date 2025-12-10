@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Salgoud\\Documents\\GitHub\\ER-Final-Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A08097B3-029E-F7F2-86CE-D36DA1A0CDBA}|Assembly-CSharp.csproj|c:\\users\\salgoud\\documents\\github\\er-final-project\\assets\\scripts\\spells\\spellbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A08097B3-029E-F7F2-86CE-D36DA1A0CDBA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spells\\spellbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Salgoud\\Documents\\GitHub\\ER-Final-Project\\Library\\PackageCache\\com.meta.xr.sdk.interaction@33d664ec3528\\Runtime\\Sample\\Scripts\\Locomotion\\LocomotionSettings\\TogglerActiveState.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.meta.xr.sdk.interaction@33d664ec3528\\Runtime\\Sample\\Scripts\\Locomotion\\LocomotionSettings\\TogglerActiveState.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A08097B3-029E-F7F2-86CE-D36DA1A0CDBA}|Assembly-CSharp.csproj|C:\\Users\\Salgoud\\Documents\\GitHub\\ER-Final-Project\\assets\\scripts\\righthandinteractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A08097B3-029E-F7F2-86CE-D36DA1A0CDBA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\righthandinteractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Salgoud\\Documents\\GitHub\\ER-Final-Project\\Library\\PackageCache\\com.meta.xr.mrutilitykit@7a74cdb228ff\\Core\\Scripts\\MRUK.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.meta.xr.mrutilitykit@7a74cdb228ff\\Core\\Scripts\\MRUK.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A08097B3-029E-F7F2-86CE-D36DA1A0CDBA}|Assembly-CSharp.csproj|C:\\Users\\Salgoud\\Documents\\GitHub\\ER-Final-Project\\assets\\scripts\\gridsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A08097B3-029E-F7F2-86CE-D36DA1A0CDBA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gridsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A08097B3-029E-F7F2-86CE-D36DA1A0CDBA}|Assembly-CSharp.csproj|c:\\users\\salgoud\\documents\\github\\er-final-project\\assets\\scripts\\spells\\spellbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A08097B3-029E-F7F2-86CE-D36DA1A0CDBA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spells\\spellbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A08097B3-029E-F7F2-86CE-D36DA1A0CDBA}|Assembly-CSharp.csproj|C:\\Users\\Salgoud\\Documents\\GitHub\\ER-Final-Project\\assets\\scripts\\spelltableorbs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -55,6 +63,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "TogglerActiveState.cs",
+              "DocumentMoniker": "C:\\Users\\Salgoud\\Documents\\GitHub\\ER-Final-Project\\Library\\PackageCache\\com.meta.xr.sdk.interaction@33d664ec3528\\Runtime\\Sample\\Scripts\\Locomotion\\LocomotionSettings\\TogglerActiveState.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\com.meta.xr.sdk.interaction@33d664ec3528\\Runtime\\Sample\\Scripts\\Locomotion\\LocomotionSettings\\TogglerActiveState.cs",
+              "ToolTip": "C:\\Users\\Salgoud\\Documents\\GitHub\\ER-Final-Project\\Library\\PackageCache\\com.meta.xr.sdk.interaction@33d664ec3528\\Runtime\\Sample\\Scripts\\Locomotion\\LocomotionSettings\\TogglerActiveState.cs",
+              "RelativeToolTip": "Library\\PackageCache\\com.meta.xr.sdk.interaction@33d664ec3528\\Runtime\\Sample\\Scripts\\Locomotion\\LocomotionSettings\\TogglerActiveState.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowCQAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T10:30:42.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MRUK.cs",
+              "DocumentMoniker": "C:\\Users\\Salgoud\\Documents\\GitHub\\ER-Final-Project\\Library\\PackageCache\\com.meta.xr.mrutilitykit@7a74cdb228ff\\Core\\Scripts\\MRUK.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\com.meta.xr.mrutilitykit@7a74cdb228ff\\Core\\Scripts\\MRUK.cs",
+              "ToolTip": "C:\\Users\\Salgoud\\Documents\\GitHub\\ER-Final-Project\\Library\\PackageCache\\com.meta.xr.mrutilitykit@7a74cdb228ff\\Core\\Scripts\\MRUK.cs",
+              "RelativeToolTip": "Library\\PackageCache\\com.meta.xr.mrutilitykit@7a74cdb228ff\\Core\\Scripts\\MRUK.cs",
+              "ViewState": "AgIAAGsCAAAAAAAAAAAowHcCAACHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T10:27:33.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "SpellBehavior.cs",
               "DocumentMoniker": "C:\\Users\\Salgoud\\Documents\\GitHub\\ER-Final-Project\\Assets\\Scripts\\Spells\\SpellBehavior.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Spells\\SpellBehavior.cs",
@@ -73,26 +107,27 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\RightHandInteractor.cs",
               "ToolTip": "C:\\Users\\Salgoud\\Documents\\GitHub\\ER-Final-Project\\Assets\\Scripts\\RightHandInteractor.cs",
               "RelativeToolTip": "Assets\\Scripts\\RightHandInteractor.cs",
-              "ViewState": "AgIAALgAAAAAAAAAAAAcwMYAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAKkAAAAAAAAAAAAcwMYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-07T04:15:49.266Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "GridSystem.cs",
               "DocumentMoniker": "C:\\Users\\Salgoud\\Documents\\GitHub\\ER-Final-Project\\Assets\\Scripts\\GridSystem.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GridSystem.cs",
               "ToolTip": "C:\\Users\\Salgoud\\Documents\\GitHub\\ER-Final-Project\\Assets\\Scripts\\GridSystem.cs",
               "RelativeToolTip": "Assets\\Scripts\\GridSystem.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAGEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAcwBUAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T08:06:11.445Z"
+              "WhenOpened": "2025-12-09T08:06:11.445Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "OVRManager.cs",
               "DocumentMoniker": "C:\\Users\\Salgoud\\Documents\\GitHub\\ER-Final-Project\\Library\\PackageCache\\com.meta.xr.sdk.core@d6da9ab40659\\Scripts\\OVRManager.cs",
               "RelativeDocumentMoniker": "Library\\PackageCache\\com.meta.xr.sdk.core@d6da9ab40659\\Scripts\\OVRManager.cs",
@@ -100,12 +135,11 @@
               "RelativeToolTip": "Library\\PackageCache\\com.meta.xr.sdk.core@d6da9ab40659\\Scripts\\OVRManager.cs",
               "ViewState": "AgIAAGEIAAAAAAAAAAAowHAIAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-07T04:28:27.66Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-07T04:28:27.66Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "OVRHaptics.cs",
               "DocumentMoniker": "C:\\Users\\Salgoud\\Documents\\GitHub\\ER-Final-Project\\Library\\PackageCache\\com.meta.xr.sdk.core@d6da9ab40659\\Scripts\\OVRHaptics.cs",
               "RelativeDocumentMoniker": "Library\\PackageCache\\com.meta.xr.sdk.core@d6da9ab40659\\Scripts\\OVRHaptics.cs",
@@ -113,12 +147,11 @@
               "RelativeToolTip": "Library\\PackageCache\\com.meta.xr.sdk.core@d6da9ab40659\\Scripts\\OVRHaptics.cs",
               "ViewState": "AgIAAKAAAAAAAAAAAAAowLIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T15:35:12.421Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-06T15:35:12.421Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "PlayerInputManager.cs",
               "DocumentMoniker": "C:\\Users\\Salgoud\\Documents\\GitHub\\ER-Final-Project\\Library\\PackageCache\\com.unity.inputsystem@be6c4fd0abf5\\InputSystem\\Plugins\\PlayerInput\\PlayerInputManager.cs",
               "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.inputsystem@be6c4fd0abf5\\InputSystem\\Plugins\\PlayerInput\\PlayerInputManager.cs",
@@ -126,12 +159,11 @@
               "RelativeToolTip": "Library\\PackageCache\\com.unity.inputsystem@be6c4fd0abf5\\InputSystem\\Plugins\\PlayerInput\\PlayerInputManager.cs",
               "ViewState": "AgIAAOIBAAAAAAAAAAAowPEBAABpAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T15:32:30.669Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-06T15:32:30.669Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "SpellTableOrbs.cs",
               "DocumentMoniker": "C:\\Users\\Salgoud\\Documents\\GitHub\\ER-Final-Project\\Assets\\Scripts\\SpellTableOrbs.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SpellTableOrbs.cs",
@@ -143,7 +175,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "StaticHandGesture.cs",
               "DocumentMoniker": "C:\\Users\\User\\Unity\\ER-Final-Project\\Assets\\Samples\\XR Hands\\1.6.3\\Gestures\\Examples\\Scripts\\StaticHandGesture.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\User\\Unity\\ER-Final-Project\\Assets\\Samples\\XR Hands\\1.6.3\\Gestures\\Examples\\Scripts\\StaticHandGesture.cs",
@@ -154,7 +186,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "TeleportationActivator.cs",
               "DocumentMoniker": "C:\\Users\\User\\Unity\\ER-Final-Project\\Assets\\Scenes\\TestScene\\TeleportationActivator.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\User\\Unity\\ER-Final-Project\\Assets\\Scenes\\TestScene\\TeleportationActivator.cs",
@@ -166,7 +198,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "AnimateHandOnInput.cs",
               "DocumentMoniker": "C:\\Users\\User\\Unity\\ER-Final-Project\\Assets\\Scenes\\TestScene\\AnimateHandOnInput.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\User\\Unity\\ER-Final-Project\\Assets\\Scenes\\TestScene\\AnimateHandOnInput.cs",
@@ -178,7 +210,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "InputTest.cs",
               "DocumentMoniker": "C:\\Users\\User\\Unity\\ER-Final-Project\\Assets\\Scenes\\TestScene\\InputTest.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\User\\Unity\\ER-Final-Project\\Assets\\Scenes\\TestScene\\InputTest.cs",
