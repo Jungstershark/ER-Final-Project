@@ -19,6 +19,7 @@ public class GridSystem : MonoBehaviour
     public (int, int) startPoint;
     public int totalRows;
     public int totalCols;
+    public OrbConnector orbConnector;
     public UnityEvent Shatter;
     public UnityEvent Magnet;
     public UnityEvent Restart;
@@ -91,6 +92,7 @@ public class GridSystem : MonoBehaviour
         if (this.startPoint.Item1 == -1 && this.startPoint.Item2 == -1)
         {
             this.startPoint = (row, col);
+            orbConnector.NewNode(objectGrid[row][col]);
         }
         else
         {
@@ -148,6 +150,7 @@ public class GridSystem : MonoBehaviour
                     //this.objectGrid[from.Item1][from.Item2].OrbSelected();
                 }
                 //this.objectGrid[to.Item1][to.Item2].OrbSelected();
+                orbConnector.NewNode(this.objectGrid[to.Item1][to.Item2]);
                 Debug.Log($"Line drawn from {from} to {to}");
             }
         }
