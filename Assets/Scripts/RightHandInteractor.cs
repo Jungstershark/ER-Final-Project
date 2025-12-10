@@ -101,7 +101,7 @@ public class RightHandInteractor : MonoBehaviour {
     [HideInInspector]
     public Vector3 hitPoint;
 
-
+    private bool enableSpellTracing = false;
 
 
     //  Task 1. Construct the ray
@@ -121,23 +121,26 @@ public class RightHandInteractor : MonoBehaviour {
             return;
         }
         spellTable.transform.position = wristTransform.position + wristTransform.forward * 0.5f;
-        // Ensure upright rotation: forward is wristTransform.forward, up is Vector3.up
-        spellTable.transform.rotation = Quaternion.LookRotation(wristTransform.forward, Vector3.up);
+        Debug.Log("Spell Table Position: " + spellTable.transform.position.ToString());
+        spellTable.transform.rotation = Quaternion.LookRotation(Vector3.up ,wristTransform.forward);
         
     }
 
-    // public void LockSpellTable()
-    // {
-    //     Debug.Log("Locking Spell Table");
-    //     // Keep current position and rotation
-    //     spellTableLock = true;
-    // }
+
+
+    public void LockSpellTable()
+    {
+        Debug.Log("Locking Spell Table");
+        // Keep current position and rotation
+        spellTableLock = true;
+    }
 
     public void CloseSpellTable()
     {
         spellTable.transform.position = new Vector3(0, 0, 0);
         spellTable.transform.rotation = Quaternion.identity;
         spellTableLock = false;
+        Debug.Log("Unlocking Spell Table");
         resetOrbs.Invoke();
 
     }
@@ -150,15 +153,21 @@ public class RightHandInteractor : MonoBehaviour {
         }
     }
 
+    public void ToggleSpellTracing()
+    {
+        enableSpellTracing = !enableSpellTracing;
+    }
+
 
     //  Task 2. Render the ray
     //  TODO: Implement the function to render the ray using a cylinder.
-    public void RenderRay(Ray ray, float rayLength) {
+    public void RenderRay(Ray ray, float rayLength, Color color) {
         // Debug.DrawRay(ray.origin, ray.direction * rayLength, Color.green);
         Vector3 rayDestination = ray.origin + ray.direction * rayLength;
         rayCylinder.transform.position = ray.origin + ray.direction * rayLength / 2;
         rayCylinder.transform.LookAt(rayDestination);
         rayCylinder.transform.localScale = new Vector3(0.002f, 0.002f, rayLength);
+        SetColor(color, rayCylinder);
         // debugSphere.transform.position = ray.origin + ray.direction * rayLength;
         return;
 
@@ -198,7 +207,7 @@ public class RightHandInteractor : MonoBehaviour {
         }
         return false;
     }
-
+    
     public void spellTableCheckHit(Ray ray, float rayLength)
     {
         RaycastHit[] hits = Physics.RaycastAll(ray, rayLength);
@@ -214,46 +223,55 @@ public class RightHandInteractor : MonoBehaviour {
                 if (go == orb00)
                 {
                     SelectOrb00.Invoke();
+                    Debug.Log("Orb 00 selected");
                     break;
                 }
                 else if (go == orb01)
                 {
                     SelectOrb01.Invoke();
+                    Debug.Log("Orb 01 selected");
                     break;
                 }
                 else if (go == orb02)
                 {
                     SelectOrb02.Invoke();
+                    Debug.Log("Orb 02 selected");
                     break;
                 }
                 else if (go == orb10)
                 {
                     SelectOrb10.Invoke();
+                    Debug.Log("Orb 10 selected");
                     break;
                 }
                 else if (go == orb11)
                 {
                     SelectOrb11.Invoke();
+                    Debug.Log("Orb 11 selected");
                     break;
                 }
                 else if (go == orb12)
                 {
                     SelectOrb12.Invoke();
+                    Debug.Log("Orb 12 selected");
                     break;
                 }
                 else if (go == orb20)
                 {
                     SelectOrb20.Invoke();
+                    Debug.Log("Orb 20 selected");
                     break;
                 }
                 else if (go == orb21)
                 {
                     SelectOrb21.Invoke();
+                    Debug.Log("Orb 21 selected");
                     break;
                 }
                 else if (go == orb22)
                 {
                     SelectOrb22.Invoke();
+                    Debug.Log("Orb 22 selected");
                     break;
                 }
             }
@@ -344,6 +362,8 @@ public class RightHandInteractor : MonoBehaviour {
     }
 
     void Update() {
+        // Debug.Log("Right Hand Interactor Update");
+
         bool SpellTableTriggered = openSpellTable.WasPressedThisFrame();
         bool SpellTableClosed = closeSpellTable.WasPressedThisFrame();
 
@@ -388,9 +408,23 @@ public class RightHandInteractor : MonoBehaviour {
             CloseSpellTableEvent.Invoke();
         }
         */
+        ray = ConstructRay(wristTransform);
+        // Debug.Log("Ray Origin: " + ray.origin.ToString() + " Ray Direction: " + ray.direction.ToString());
+        if (enableSpellTracing)
+        {
+            Debug.Log("Spell Tracing...");
+            RenderRay(ray, rayLength, Color.red);
+            spellTableCheckHit(ray, rayLength);
+        }
+        else
+        {
+            RenderRay(ray, rayLength, Color.blue);
+            Debug.Log("Normal Tracing");
+        }
 
 
-        if (isControling) {
+        if (isControling)
+        {
 
             Vector3 currentGrabPoint = handOffset + GrabPoint;
 
@@ -400,15 +434,18 @@ public class RightHandInteractor : MonoBehaviour {
             currentHitObject.transform.position = objPose.position;
             currentHitObject.transform.rotation = objPose.rotation;
 
-        } else {
+        }
+        else
+        {
             visualHand.transform.position = wristTransform.position;
             visualHand.transform.rotation = wristTransform.rotation;
-            ray = ConstructRay(wristTransform);
-            RenderRay(ray, rayLength);
-            spellTableCheckHit(ray, rayLength);
+            // ray = ConstructRay(wristTransform);
+            // RenderRay(ray, rayLength);
+            // spellTableCheckHit(ray, rayLength);
 
 
-            if (CheckHit(ray, rayLength)) {
+            if (CheckHit(ray, rayLength))
+            {
                 // When the ray hits an object, reset the hit object cache timer and update the last hit object.
                 hitObjectCacheTimer = hitObjectCacheTime;
                 lastHitObject = currentHitObject;
@@ -417,16 +454,22 @@ public class RightHandInteractor : MonoBehaviour {
                 // Calculate the offset between the hit point and the object's center.
                 hitPointOffset = currentHitObject.transform.position - hitPoint;
 
-            } else {
+            }
+            else
+            {
                 // This part is to cache the last hit object for a short period of time to "remember" the object being pointed at.
-                if (hitObjectCacheTimer > 0.0f) {
+                if (hitObjectCacheTimer > 0.0f)
+                {
                     // The timer is still running, keep the last hit object as the current hit object.
                     hitObjectCacheTimer -= Time.deltaTime;
                     currentHitObject = lastHitObject;
 
-                } else {
+                }
+                else
+                {
                     // The timer has expired, clear the last hit object and current hit object.
-                    if (lastHitObject != null) {
+                    if (lastHitObject != null)
+                    {
                         SetColor(Color.white, lastHitObject);
                         lastHitObject = null;
                         handOffset = Vector3.zero;
@@ -436,8 +479,10 @@ public class RightHandInteractor : MonoBehaviour {
                     handOffset = Vector3.zero;
                 }
             }
-            foreach (GameObject obj in GameObject.FindGameObjectsWithTag("Interactable")) {
-                if (obj != currentHitObject) {
+            foreach (GameObject obj in GameObject.FindGameObjectsWithTag("Interactable"))
+            {
+                if (obj != currentHitObject)
+                {
                     SetColor(Color.white, obj);
                 }
             }
