@@ -143,7 +143,7 @@ public class RightHandInteractor : MonoBehaviour {
         spellTableLock = false;
         Debug.Log("Unlocking Spell Table");
         resetOrbs.Invoke();
-
+        OrbConnector.Instance.ResetLine();
     }
 
 
