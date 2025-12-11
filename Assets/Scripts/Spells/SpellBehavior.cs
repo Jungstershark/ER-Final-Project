@@ -53,17 +53,18 @@ public class SpellBehavior : MonoBehaviour
             GameObject go = h.collider.gameObject;
             if (go.CompareTag("Magnetic"))
             {
-                StartCoroutine(AttractObject(go));
+                Vector3 finalDestination = SpellSource.transform.position;
+                StartCoroutine(AttractObject(go, finalDestination));
             }
 
         }
     }
 
-    public IEnumerator AttractObject(GameObject target)
+    public IEnumerator AttractObject(GameObject target, Vector3 to)
     {
-        while (Vector3.Distance(SpellSource.transform.position, target.transform.position) > 0.5f)
+        while (Vector3.Distance(to, target.transform.position) > 0.5f)
         {
-            target.transform.position = Vector3.MoveTowards(target.transform.position, SpellSource.transform.position, Time.deltaTime * 5f);
+            target.transform.position = Vector3.MoveTowards(target.transform.position, to, Time.deltaTime * 5f);
             yield return null;
         }
     }
