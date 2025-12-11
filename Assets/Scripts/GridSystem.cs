@@ -146,6 +146,7 @@ public class GridSystem : MonoBehaviour
     public void resetCombi()
     {
         this.currentCombi = new List<(int, int)>();
+        this.orbConnector.ResetLine();
     }
 
     public bool isActivated()

@@ -96,6 +96,9 @@ public class RightHandInteractor : MonoBehaviour {
     private Quaternion OriginalObjectRotation;
     private Quaternion OriginalHandRotation;
 
+    private Vector3 OriginalSpellTableLocation;
+    private Quaternion OriginalSpellTableRotation;
+
     [HideInInspector]
     public GameObject currentHitObject;
     [HideInInspector]
@@ -138,12 +141,12 @@ public class RightHandInteractor : MonoBehaviour {
 
     public void CloseSpellTable()
     {
-        spellTable.transform.position = new Vector3(0, 0, 0);
-        spellTable.transform.rotation = Quaternion.identity;
+        spellTable.transform.position = OriginalSpellTableLocation;
+        spellTable.transform.rotation = OriginalSpellTableRotation;
         spellTableLock = false;
         Debug.Log("Unlocking Spell Table");
         resetOrbs.Invoke();
-
+        OrbConnector.Instance.ResetLine();
     }
 
 
@@ -338,6 +341,10 @@ public class RightHandInteractor : MonoBehaviour {
         SetColor(Color.blue, rayCylinder);
         openSpellTable = InputSystem.actions.FindAction("OpenSpellTable");
         closeSpellTable = InputSystem.actions.FindAction("CloseSpellTable");
+
+        OriginalSpellTableLocation = spellTable.transform.position;
+        OriginalSpellTableRotation = spellTable.transform.rotation;
+
         // StartCoroutine(ReportWristPosition());
 
         GameObject[] orb_objects =  GameObject.FindGameObjectsWithTag("SpellTableOrb");
