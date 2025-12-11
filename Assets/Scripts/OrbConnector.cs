@@ -22,8 +22,8 @@ public class OrbConnector : MonoBehaviour
         lineRenderer.material = new Material(Shader.Find("Sprites/Default"));
         lineRenderer.startColor = Color.blue;
         lineRenderer.endColor = Color.blue;
-        lineRenderer.startWidth = 0.2f;
-        lineRenderer.endWidth = 0.2f;
+        lineRenderer.startWidth = 0.02f;
+        lineRenderer.endWidth = 0.02f;
 
         lineRenderer.positionCount = 0;
     }

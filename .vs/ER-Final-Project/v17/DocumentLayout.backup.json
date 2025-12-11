@@ -3,7 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\Salgoud\\Documents\\GitHub\\ER-Final-Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A08097B3-029E-F7F2-86CE-D36DA1A0CDBA}|Assembly-CSharp.csproj|C:\\Users\\Salgoud\\Documents\\GitHub\\ER-Final-Project\\assets\\scripts\\orbconnector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A08097B3-029E-F7F2-86CE-D36DA1A0CDBA}|Assembly-CSharp.csproj|c:\\users\\salgoud\\documents\\github\\er-final-project\\assets\\scripts\\dooropen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A08097B3-029E-F7F2-86CE-D36DA1A0CDBA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dooropen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A08097B3-029E-F7F2-86CE-D36DA1A0CDBA}|Assembly-CSharp.csproj|c:\\users\\salgoud\\documents\\github\\er-final-project\\assets\\scripts\\orbconnector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A08097B3-029E-F7F2-86CE-D36DA1A0CDBA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\orbconnector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -11,7 +15,7 @@
       "RelativeMoniker": "D:0:0:{A08097B3-029E-F7F2-86CE-D36DA1A0CDBA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\righthandinteractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A08097B3-029E-F7F2-86CE-D36DA1A0CDBA}|Assembly-CSharp.csproj|c:\\users\\salgoud\\documents\\github\\er-final-project\\assets\\scripts\\gridsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A08097B3-029E-F7F2-86CE-D36DA1A0CDBA}|Assembly-CSharp.csproj|C:\\Users\\Salgoud\\Documents\\GitHub\\ER-Final-Project\\assets\\scripts\\gridsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A08097B3-029E-F7F2-86CE-D36DA1A0CDBA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gridsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -38,11 +42,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
+              "Title": "DoorOpen.cs",
+              "DocumentMoniker": "C:\\Users\\Salgoud\\Documents\\GitHub\\ER-Final-Project\\Assets\\Scripts\\DoorOpen.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\DoorOpen.cs",
+              "ToolTip": "C:\\Users\\Salgoud\\Documents\\GitHub\\ER-Final-Project\\Assets\\Scripts\\DoorOpen.cs",
+              "RelativeToolTip": "Assets\\Scripts\\DoorOpen.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T18:37:08.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "SpellBehavior.cs",
               "DocumentMoniker": "C:\\Users\\Salgoud\\Documents\\GitHub\\ER-Final-Project\\Assets\\Scripts\\Spells\\SpellBehavior.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Spells\\SpellBehavior.cs",
@@ -54,7 +71,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "OrbConnector.cs",
               "DocumentMoniker": "C:\\Users\\Salgoud\\Documents\\GitHub\\ER-Final-Project\\Assets\\Scripts\\OrbConnector.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\OrbConnector.cs",
@@ -67,7 +84,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "GridOrb.cs",
               "DocumentMoniker": "C:\\Users\\Salgoud\\Documents\\GitHub\\ER-Final-Project\\Assets\\Scripts\\GridOrb.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GridOrb.cs",
@@ -79,7 +96,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "FireballCollision.cs",
               "DocumentMoniker": "C:\\Users\\Salgoud\\Documents\\GitHub\\ER-Final-Project\\Assets\\Scripts\\Spells\\FireballCollision.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Spells\\FireballCollision.cs",
@@ -91,7 +108,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "RightHandInteractor.cs",
               "DocumentMoniker": "C:\\Users\\Salgoud\\Documents\\GitHub\\ER-Final-Project\\Assets\\Scripts\\RightHandInteractor.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\RightHandInteractor.cs",
@@ -99,12 +116,11 @@
               "RelativeToolTip": "Assets\\Scripts\\RightHandInteractor.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAowHsBAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-07T04:15:49.266Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-07T04:15:49.266Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "GridSystem.cs",
               "DocumentMoniker": "C:\\Users\\Salgoud\\Documents\\GitHub\\ER-Final-Project\\Assets\\Scripts\\GridSystem.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GridSystem.cs",
@@ -112,12 +128,11 @@
               "RelativeToolTip": "Assets\\Scripts\\GridSystem.cs",
               "ViewState": "AgIAALIAAAAAAAAAAAA7wMEAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T08:06:11.445Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-09T08:06:11.445Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "SpellTableOrbs.cs",
               "DocumentMoniker": "C:\\Users\\Salgoud\\Documents\\GitHub\\ER-Final-Project\\Assets\\Scripts\\SpellTableOrbs.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SpellTableOrbs.cs",
